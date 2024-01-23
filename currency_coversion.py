@@ -8,7 +8,6 @@ import tkinter as tk
 from tkinter import ttk
 from datetime import datetime
 
-
 class RealTimeCurrencyConverter():
     def __init__(self, url):
         self.data = requests.get(url).json()

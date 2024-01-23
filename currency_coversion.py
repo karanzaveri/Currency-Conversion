@@ -109,7 +109,7 @@ class App(tk.Tk):
         self.update_history(user_name, from_curr, to_curr, amount, converted_amount)
 
     def restrictNumberOnly(self, action, string):
-        regex = re.compile(r"[0-9,]*?(\.)?[0-9,]*$")
+        regex = re.compile(r'^[0-9]*\.?[0-9]*$')
         result = regex.match(string)
         return (string == "" or (string.count('.') <= 1 and result is not None))
 

@@ -44,36 +44,8 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 - Tasklist [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/trello.png)
 
 # DDD
-Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. Similar to planning a party by considering the needs and preferences of guests, DDD focuses on comprehending intricate business processes and requirements. It involves creating a well-thought-out plan for each software component, adapting it as user needs evolve. DDD aims to ensure that the software is not only functional but also aligns effectively with the dynamic and evolving demands of the real-world business domain.
-
-## Core Domains
-
-### 1. Financial Services
-* Managing currency rates, conversions, and accurate financial calculations.
-
-### 2. User Interface (UI)/User Experience (UX)
-* Designing and managing the graphical interface for user interaction.
-
-### 3. External APIs/Services Integration
-* Interfacing with external API (like forex_python) for currency data retrieval and conversion.
-
-### 4. User Input Handling
-* Capturing and processing user input like the source currency, target currency, and conversion amount.
-
-### 5. Data Representation
-* Representing and displaying data in the graphical user interface using the Tkinter libary.
-
-### 6. Dynamic GUI Elements
-* Managing the dynamic update of GUI elements, such as available currencies, based on user input.
-
-### 7. Error Handling and Validation
-* Ensuring input data integrity and managing potential errors that can occur during user interactions or conversions.
-
-### 8. State Management:
-* Managing the state of GUI elements, determining when certain buttons should be enabled or disabled based on user actions.
-
-### 9. Software Engineering/Architecture
-* Designing the software structure, classes, and modules for efficiency and scalability.
+Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. 
+[PDF](https://github.com/karanzaveri/Currency-Conversion/blob/main/docs/DDD.pdf)
 
 ## Domain Chart
 * The Domain Chart represents the distinct domains within the application. The domains are interconnected to represent the structured and modular design of the application.

@@ -125,7 +125,6 @@ class App(tk.Tk):
     def show_transaction_history(self):
         HistoryPage(self, self.history)
 
-
 if __name__ == '__main__':
     url = 'https://api.exchangerate-api.com/v4/latest/USD'
     converter = RealTimeCurrencyConverter(url)

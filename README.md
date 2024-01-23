@@ -15,14 +15,15 @@ It is built using Python various libraries like forex-python, tkinter.
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
 
 # Libraries Used
-### forex-python
-* Forex Python is a Free Foreign exchange rates and currency conversion library
-
-#### Currency Source
-https://theforexapi.com is a free API for current and historical foreign exchange rates published by European Central Bank. The rates are updated daily 3PM CET.
-
 ### tkinter
 * Python's standard GUI toolkit for creating desktop applications with widgets, windows, and event handling.
+
+### datetime
+* The datetime module supplies classes for manipulating dates and times.
+
+### API
+#### Currency Source
+https://www.exchangerate-api.com/ provides accurate and reliable currency conversion rates for 161 currencies, ensuring uninterrupted service. Provides integration for SaaS, Dashboards, and E-Commerce with exceptional uptime and support.
 
 # UML Diagrams
 ### 1. Activity Diagram

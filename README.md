@@ -1,29 +1,17 @@
 # Currency Conversion
 The Currency Converter project allows you to convert from one currency to another with real-time exchange rates.
-It is built using Python various libraries like forex-python, tkinter.
+It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.com/) that provides accurate and reliable currency conversion rates for 161 currencies. It provides integration for SaaS, Dashboards, and E-Commerce with exceptional uptime and support.
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
 
 # Table Of Contents
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
-2. [Libraries Used](https://github.com/karanzaveri/Currency-Conversion/#libraries-used)
-3. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
-4. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
-5. [Built Using](https://github.com/karanzaveri/Currency-Conversion/#built-using)
+2. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
+3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
+5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
-
-# Libraries Used
-### tkinter
-* Python's standard GUI toolkit for creating desktop applications with widgets, windows, and event handling.
-
-### datetime
-* The datetime module supplies classes for manipulating dates and times.
-
-### API
-#### Currency Source
-https://www.exchangerate-api.com/ provides accurate and reliable currency conversion rates for 161 currencies, ensuring uninterrupted service. Provides integration for SaaS, Dashboards, and E-Commerce with exceptional uptime and support.
 
 # UML Diagrams
 ### 1. Activity Diagram
@@ -37,6 +25,21 @@ https://www.exchangerate-api.com/ provides accurate and reliable currency conver
 ### 3. Class Diagram
 * The class diagram represents classes like Currency Converter, Currency Rates, GUI and Error Handling elements, illustrating their relationships and interactions in facilitating user input, data retrieval, and conversion processes within the application.
 * [Class Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/class_diagram.jpg)
+
+# Requirements Engineering
+### 1. Functional Requirements
+* Currency Conversion
+* Real-Time Exchange Rates
+* Graphical User Interface (GUI)
+* User Input Handling
+* Transaction History
+
+### 2. Non-Functional Requirements
+* Performance
+* User Experience (UX)
+* Reliability
+* Maintainability
+* Quality Assurance
 
 # DDD
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. Similar to planning a party by considering the needs and preferences of guests, DDD focuses on comprehending intricate business processes and requirements. It involves creating a well-thought-out plan for each software component, adapting it as user needs evolve. DDD aims to ensure that the software is not only functional but also aligns effectively with the dynamic and evolving demands of the real-world business domain.

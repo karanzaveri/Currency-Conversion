@@ -2,13 +2,12 @@
 The Currency Converter project allows you to convert from one currency to another with real-time exchange rates.
 It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.com/) that provides accurate and reliable currency conversion rates for 161 currencies. It provides integration for SaaS, Dashboards, and E-Commerce with exceptional uptime and support.
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
-
 # Table Of Contents
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
 2. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
 5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
+6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
@@ -79,6 +78,11 @@ Domain-Driven Design (DDD) is an approach to software development that centers a
 ## Domain Chart
 * The Domain Chart represents the distinct domains within the application. The domains are interconnected to represent the structured and modular design of the application.
 * [Domain Chart](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/domain_chart.png)
+
+# Metrics
+* [Sonarqube](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/sonarqube.png)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
 
 # Built Using
 ![python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)

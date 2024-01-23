@@ -8,6 +8,7 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
 5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
 6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
+7. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
@@ -55,6 +56,14 @@ Domain-Driven Design (DDD) is an approach to software development that centers a
 * [Sonarqube](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/sonarqube.png)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
+# IDE
+I have used Visual Studio Code IDE, mentioned below are my few favorite shortcuts:
+* F5 : Run and Debug
+* Ctrl + ] / Ctrl + [ : Indentation
+* Ctrl + / : Comment/Uncomment code lines
+* Ctrl + B : Show or hide the sidebar
+* Ctrl + Shift + P : Open the command palette
 
 # Built Using
 ![python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)

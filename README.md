@@ -41,6 +41,9 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 * Maintainability
 * Quality Assurance
 
+### [Trello](https://trello.com/invite/b/g0aGcUnD/ATTI873728185d133e582c79efe96ca36a855FA179CA/currency-conversion)
+- Tasklist [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/trello.png)
+
 # DDD
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. Similar to planning a party by considering the needs and preferences of guests, DDD focuses on comprehending intricate business processes and requirements. It involves creating a well-thought-out plan for each software component, adapting it as user needs evolve. DDD aims to ensure that the software is not only functional but also aligns effectively with the dynamic and evolving demands of the real-world business domain.
 

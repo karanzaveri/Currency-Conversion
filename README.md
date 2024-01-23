@@ -2,6 +2,8 @@
 The Currency Converter project allows you to convert from one currency to another with real-time exchange rates.
 It is built using Python various libraries like forex-python, tkinter.
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
 # Table Of Contents
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
 2. [Libraries Used](https://github.com/karanzaveri/Currency-Conversion/#libraries-used)

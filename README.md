@@ -6,10 +6,11 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
 2. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
-5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
-6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
-7. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
-8. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
+4. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
+5. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
+6. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
+7. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
+8. [Functional Programming](https://github.com/karanzaveri/Currency-Conversion/#functional-programming)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py)
@@ -77,6 +78,27 @@ I have used Visual Studio Code IDE, mentioned below are my few favorite shortcut
 * Ctrl + / : Comment/Uncomment code lines
 * Ctrl + B : Show or hide the sidebar
 * Ctrl + Shift + P : Open the command palette
+
+# Functional Programming
+In my Currency Conversion code, certain functional programming principles are applied. Here's how the code adheres to these principles:
+
+1. Final Data Structures:
+The data attribute in the 'RealTimeCurrencyConverter' class is initialized with the result of the API call ('response.json()'), which is a final data structure containing exchange rates. The data is not modified afterward.
+
+2. Side-Effect-Free Functions:
+The 'get_exchange_rates' function in the 'RealTimeCurrencyConverter' class has no side effects. It takes a URL as input, performs an HTTP GET request, and returns the JSON response. It does not modify any external state.
+The 'convert' method also does not have side effects. It takes input values and returns a new calculated value without modifying any external state.
+
+3. Higher-Order Functions:
+The use of the 'requests.get' function in the 'get_exchange_rates' method can be considered a higher-order function. It takes a URL as an argument and returns a function (get) that performs an HTTP GET request.
+
+4. Functions as Parameters and Return Values:
+The 'convert' method in the 'RealTimeCurrencyConverter' class takes three parameters ('from_currency', 'to_currency', and 'amount') and returns a calculated value. It can be seen as a function that takes parameters and produces a result.
+The 'command' parameter in the 'Button' widgets ('convert_button' and 'history_button') takes functions ('perform_conversion' and 'show_transaction_history') as parameters to be executed when the buttons are clicked.
+
+5. Closures / Anonymous Functions:
+The use of 'lambda' functions is not explicitly present in the code. However, the functions passed as parameters to the 'command' attribute of buttons can be considered as anonymous functions.
+Overall, while the code incorporates some functional programming principles, it primarily follows an object-oriented paradigm due to its use of classes and methods.
 
 # Built Using
 ![python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)

@@ -85,12 +85,18 @@ Build management for the Currency Conversion project has been implemented using 
 [![Python CI](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml/badge.svg)](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml)
 
 # Unit Tests
-The [code](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py) contains a set of unit tests written using the unittest framework in Python.
+The unit tests has been done in 2 parts and is written using the unittest framework in Python.
+[Unit Test 1](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py)
+[Unit Test 2](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_non_gui.py)
 
 #### 1. TestRealTimeCurrencyConverter Class
 * [TestRealTimeCurrencyConverter](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L4): This is a test case class that inherits from 'unittest.TestCase'. It contains test methods for the 'RealTimeCurrencyConverter' class.
+###### test_main.py
 * [test_get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L5): Checks if the 'get_exchange_rates' method of 'RealTimeCurrencyConverter' returns valid data.
 * [test_convert](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L12): Checks if the 'convert' method of 'RealTimeCurrencyConverter' behaves as expected.
+###### test_non_gui.py
+* [test_get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_non_gui.py#L5): Checks if the API request to obtain exchange rates for USD is successful and if the returned data contains the 'rates' key.
+* [test_convert](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_non_gui.py#L12): Tests the currency conversion functionality by converting 1 unit of USD to INR, ensuring that the result is not None and is of type float.
 
 #### 2. TestCurrencyConverterApp Class
 * [TestCurrencyConverterApp](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L19): This is another test case class for the 'CurrencyConverterApp' class.

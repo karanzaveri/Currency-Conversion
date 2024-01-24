@@ -2,7 +2,7 @@
 The Currency Converter project allows you to convert from one currency to another with real-time exchange rates.
 It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.com/) that provides accurate and reliable currency conversion rates for 161 currencies. It provides integration for SaaS, Dashboards, and E-Commerce with exceptional uptime and support.
 
-# Table Of Contents
+# Table Of Contents :
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
 2. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)

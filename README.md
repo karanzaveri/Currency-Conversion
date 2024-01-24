@@ -56,6 +56,8 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 * [Analysis Documentation](https://karan-zaveri.notion.site/Analysis-Currency-Conversion-4b10a770f85840edb3819946a50278b5?pvs=4)
 * [Analysis Checklist](https://karan-zaveri.notion.site/Analysis-Checklist-Currency-Conversion-8a3efe00fa5d469d974ba3072fc94a0d?pvs=4)
 
+You can find my Analysis for the Semester Project [here](https://karan-zaveri.notion.site/Analysis-for-the-Semester-Project-60ff70e4746e4fd99f3af4bc02509e2b?pvs=4)
+
 # DDD
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. 
 [PDF](https://github.com/karanzaveri/Currency-Conversion/blob/main/docs/DDD.pdf)

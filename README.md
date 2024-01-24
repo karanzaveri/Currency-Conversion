@@ -6,12 +6,13 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 1. [Code](https://github.com/karanzaveri/Currency-Conversion/#code)
 2. [UML Diagrams](https://github.com/karanzaveri/Currency-Conversion/#uml-diagrams)
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
-4. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
-5. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
-6. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
-7. [Unit Tests](https://github.com/karanzaveri/Currency-Conversion/#unit-tests)
-8. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
-9. [Functional Programming](https://github.com/karanzaveri/Currency-Conversion/#functional-programming)
+4. [Analysis](https://github.com/karanzaveri/Currency-Conversion/#analysis)
+5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
+6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
+7. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
+8. [Unit Tests](https://github.com/karanzaveri/Currency-Conversion/#unit-tests)
+9. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
+10. [Functional Programming](https://github.com/karanzaveri/Currency-Conversion/#functional-programming)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py)
@@ -49,6 +50,9 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 
 ### [JIRA](https://karanzaveri92.atlassian.net/jira/software/projects/CC/boards/1?atlOrigin=eyJpIjoiZGZkYzc3ZDhjOTY0NGE0Mzg4NjU0MTQyNTNkNThkMzQiLCJwIjoiaiJ9)
 * Kanban Board [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/jira.png)
+
+# Analysis
+* [Analysis Documentation](https://www.notion.so/Analysis-Currency-Conversion-4b10a770f85840edb3819946a50278b5?pvs=4)
 
 # DDD
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. 

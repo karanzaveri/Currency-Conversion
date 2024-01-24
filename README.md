@@ -57,8 +57,13 @@ Domain-Driven Design (DDD) is an approach to software development that centers a
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
 
-[Bugs](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=bugs)
-[Security](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=security_rating)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=bugs)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
 
 # Clean Code Development
 

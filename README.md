@@ -10,9 +10,10 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
 6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
 7. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
-8. [Unit Tests](https://github.com/karanzaveri/Currency-Conversion/#unit-tests)
-9. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
-10. [Functional Programming](https://github.com/karanzaveri/Currency-Conversion/#functional-programming)
+8. [Build Management](https://github.com/karanzaveri/Currency-Conversion/#build-management)
+9. [Unit Tests](https://github.com/karanzaveri/Currency-Conversion/#unit-tests)
+10. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
+11. [Functional Programming](https://github.com/karanzaveri/Currency-Conversion/#functional-programming)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py)
@@ -76,6 +77,11 @@ Domain-Driven Design (DDD) is an approach to software development that centers a
 
 Clean Code Development (CCD) focuses on writing code that is easy to read, understand, and maintain.
 [PDF](https://github.com/karanzaveri/Currency-Conversion/blob/main/docs/Clean%20Code%20Development.pdf)
+
+# Build Management
+
+Build management for the Currency Conversion project has been implemented using [Github Actions](https://github.com/karanzaveri/TestCC/actions)
+[![Python CI](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml/badge.svg)](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml)
 
 # Unit Tests
 The [code](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py) contains a set of unit tests written using the unittest framework in Python.

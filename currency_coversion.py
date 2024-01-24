@@ -3,15 +3,24 @@
 
 import re
 import requests
+from datetime import datetime
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
-from datetime import datetime
 
 class RealTimeCurrencyConverter():
     def __init__(self, url):
-        self.data = requests.get(url).json()
+        self.data = self.get_exchange_rates(url)
         self.currencies = self.data['rates']
+
+    def get_exchange_rates(self, url):
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            return response.json()
+        except requests.RequestException as e:
+            print(f"Error in API request: {e}")
+            return None
 
     def convert(self, from_currency, to_currency, amount):
         initial_amount = amount
@@ -22,13 +31,15 @@ class RealTimeCurrencyConverter():
         amount = round(amount * self.currencies[to_currency], 4)
         return amount
 
-
 class HistoryPage(tk.Toplevel):
     def __init__(self, master, history):
         tk.Toplevel.__init__(self, master)
         self.title("Transaction History")
         self.geometry("400x200")
 
+        self.create_history_gui(history)
+
+    def create_history_gui(self, history):
         self.history_label = Label(self, text="Transaction History", font=('Courier', 15, 'bold'))
         self.history_label.pack(pady=10)
 
@@ -36,34 +47,40 @@ class HistoryPage(tk.Toplevel):
             history_entry_label = Label(self, text=entry, font=('Courier', 10))
             history_entry_label.pack()
 
-
-class App(tk.Tk):
+class CurrencyConverterApp(tk.Tk):
     def __init__(self, converter):
         tk.Tk.__init__(self)
         self.title('Currency Converter')
         self.currency_converter = converter
 
-        self.columnconfigure(0, weight=1)
-        self.columnconfigure(1, weight=1)
-        self.columnconfigure(2, weight=1)
-        self.columnconfigure(3, weight=1)
+        self.configure_gui_layout()
+        self.create_intro_labels()
+        self.create_user_input_fields()
+        self.create_conversion_fields()
+        self.create_buttons()
 
+    def configure_gui_layout(self):
+        for i in range(6):
+            self.rowconfigure(i, weight=1)
+        for i in range(4):
+            self.columnconfigure(i, weight=1)
         self.geometry("600x200")
 
-        self.intro_label = Label(self, text='Welcome to Real Time Currency Converter', fg='blue', relief=tk.RAISED, borderwidth=3)
-        self.intro_label.config(font=('Courier', 15, 'bold'))
+    def create_intro_labels(self):
+        self.welcome_label = Label(self, text='Welcome to Real Time Currency Converter', fg='blue', relief=tk.RAISED, borderwidth=3)
+        self.welcome_label.config(font=('Courier', 15, 'bold'))
+        self.welcome_label.grid(row=0, column=0, columnspan=4, pady=10, sticky='nsew')
 
         self.date_label = Label(self, text=f"1 Indian Rupee equals = {self.currency_converter.convert('INR','USD',1)} USD \n Date : {self.currency_converter.data['date']}", relief=tk.GROOVE, borderwidth=5)
-
-        self.intro_label.grid(row=0, column=0, columnspan=4, pady=10, sticky='nsew')
         self.date_label.grid(row=1, column=1, columnspan=2, sticky='nsew')
 
+    def create_user_input_fields(self):
         self.name_label = Label(self, text="Enter Your Name:", font=('Courier', 10))
         self.name_entry = Entry(self, bd=3, relief=tk.RIDGE, justify=tk.CENTER)
         self.name_label.grid(row=2, column=0, padx=10, pady=10, sticky='nsew')
         self.name_entry.grid(row=2, column=1, padx=10, pady=10, sticky='nsew')
 
-        valid = (self.register(self.restrictNumberOnly), '%d', '%P')
+        valid = (self.register(self.restrict_number_only), '%d', '%P')
         self.amount_field = Entry(self, bd=3, relief=tk.RIDGE, justify=tk.CENTER, validate='key', validatecommand=valid)
         self.converted_amount_field_label = Label(self, text='', fg='black', bg='white', relief=tk.RIDGE, justify=tk.CENTER, width=17, borderwidth=3)
 
@@ -82,18 +99,17 @@ class App(tk.Tk):
         self.to_currency_dropdown.grid(row=3, column=2, padx=10, pady=10, sticky='nsew')
         self.converted_amount_field_label.grid(row=3, column=3, padx=10, pady=10, sticky='nsew')
 
-        self.convert_button = Button(self, text="Convert", fg="black", command=self.perform)
+    def create_conversion_fields(self):
+        self.convert_button = Button(self, text="Convert", fg="black", command=self.perform_conversion)
         self.convert_button.config(font=('Courier', 10, 'bold'))
         self.convert_button.grid(row=4, column=1, columnspan=2, pady=10, sticky='nsew')
 
+    def create_buttons(self):
         self.history_button = Button(self, text="Transaction History", fg="black", command=self.show_transaction_history)
         self.history_button.config(font=('Courier', 10, 'bold'))
         self.history_button.grid(row=5, column=1, columnspan=2, pady=10, sticky='nsew')
 
-        for i in range(6):
-            self.rowconfigure(i, weight=1)
-
-    def perform(self):
+    def perform_conversion(self):
         amount = float(self.amount_field.get())
         from_curr = self.from_currency_variable.get()
         to_curr = self.to_currency_variable.get()
@@ -107,7 +123,7 @@ class App(tk.Tk):
 
         self.update_history(user_name, from_curr, to_curr, amount, converted_amount)
 
-    def restrictNumberOnly(self, action, string):
+    def restrict_number_only(self, action, string):
         regex = re.compile(r'^[0-9]*\.?[0-9]*$')
         result = regex.match(string)
         return (string == "" or (string.count('.') <= 1 and result is not None))
@@ -127,5 +143,5 @@ class App(tk.Tk):
 if __name__ == '__main__':
     url = 'https://api.exchangerate-api.com/v4/latest/USD'
     converter = RealTimeCurrencyConverter(url)
-    app = App(converter)
+    app = CurrencyConverterApp(converter)
     app.mainloop()

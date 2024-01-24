@@ -12,7 +12,7 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 8. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
 
 # Code
-To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
+To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py)
 
 # UML Diagrams
 ### 1. Activity Diagram

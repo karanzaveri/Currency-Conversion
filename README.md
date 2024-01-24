@@ -75,6 +75,19 @@ Clean Code Development (CCD) focuses on writing code that is easy to read, under
 # Unit Tests
 The [code](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py) contains a set of unit tests written using the unittest framework in Python.
 
+1. TestRealTimeCurrencyConverter Class
+* [TestRealTimeCurrencyConverter](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L4): This is a test case class that inherits from 'unittest.TestCase'. It contains test methods for the 'RealTimeCurrencyConverter' class.
+* [test_get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L5): Checks if the 'get_exchange_rates' method of 'RealTimeCurrencyConverter' returns valid data.
+* [test_convert](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L12): Checks if the 'convert' method of 'RealTimeCurrencyConverter' behaves as expected.
+
+2. TestCurrencyConverterApp Class
+* [TestCurrencyConverterApp](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L19): This is another test case class for the 'CurrencyConverterApp' class.
+* [setUp](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L20): A special method that is run before each test method. It creates instances of 'RealTimeCurrencyConverter' and 'CurrencyConverterApp'.
+* [test_restrict_number_only](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L25): Checks the 'restrict_number_only' method of 'CurrencyConverterApp' for different input cases.
+
+3. Running Tests:
+* The [main](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L37) block ensures that if the script is run directly (not imported as a module), the 'unittest.main()' function is called, which discovers and runs the tests.
+
 ![Result](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/unittest.png)
 
 # IDE

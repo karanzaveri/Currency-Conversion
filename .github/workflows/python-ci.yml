@@ -18,8 +18,14 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Install dependencies
+      run: python -m pip install -r Currency-Conversion/requirements.txt
+      working-directory: Currency-Conversion
+
     - name: Run tests
       run: python -m unittest discover
+      working-directory: Currency-Conversion
 
     - name: Run Maven
       run: mvn clean compile exec:exec
+      working-directory: Currency-Conversion

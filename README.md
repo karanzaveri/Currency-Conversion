@@ -8,7 +8,8 @@ It is built using Python and [Exchange Rate Api](https://www.exchangerate-api.co
 3. [Requirements Engineering](https://github.com/karanzaveri/Currency-Conversion/#requirements-engineering)
 5. [DDD](https://github.com/karanzaveri/Currency-Conversion/#ddd)
 6. [Metrics](https://github.com/karanzaveri/Currency-Conversion/#metrics)
-7. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
+7. [Clean Code Development](https://github.com/karanzaveri/Currency-Conversion/#clean-code-development)
+8. [IDE](https://github.com/karanzaveri/Currency-Conversion/#ide)
 
 # Code
 To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Currency-Conversion/blob/main/Currency%20Converter.ipynb)
@@ -51,14 +52,18 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. 
 [PDF](https://github.com/karanzaveri/Currency-Conversion/blob/main/docs/DDD.pdf)
 
-## Domain Chart
-* The Domain Chart represents the distinct domains within the application. The domains are interconnected to represent the structured and modular design of the application.
-* [Domain Chart](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/domain_chart.png)
-
 # Metrics
 * [Sonarqube](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/sonarqube.png)
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=karanzaveri_Currency-Conversion)
+
+[Bugs](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=bugs)
+[Security](https://sonarcloud.io/api/project_badges/measure?project=karanzaveri_Currency-Conversion&metric=security_rating)
+
+# Clean Code Development
+
+Clean Code Development (CCD) focuses on writing code that is easy to read, understand, and maintain.
+[PDF](https://github.com/karanzaveri/Currency-Conversion/blob/main/docs/Clean%20Code%20Development.pdf)
 
 # IDE
 I have used Visual Studio Code IDE, mentioned below are my few favorite shortcuts:

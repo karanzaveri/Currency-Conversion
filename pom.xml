@@ -36,7 +36,6 @@
                 </executions>
                 <configuration>
                     <executable>python</executable>
-                    <workingDirectory>${project.basedir}</workingDirectory>
                     <arguments>
                         <argument>currency_coversion.py</argument>
                     </arguments>

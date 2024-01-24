@@ -16,15 +16,15 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 # UML Diagrams
 ### 1. Activity Diagram
 * The activity diagram showcases a user-driven process, starting with entering source currency followed by target currency and then the amount. Once the valid data is entered, the conversion process is triggered and the converted amount with the applied exchange rate is displayed. 
-* [Activity Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/activity_diagram.png)
+* [Activity Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/ActivityDiagram.png)
 
 ### 2. Use Case Diagram
 * The use case diagram outlines how the users interact with the system. Users initiate the currency conversion process by specifying source currency, target currency and amount, while the system performs conversions and provides the results.
-* [Use Case Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/use_case_diagram.png)
+* [Use Case Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/UseCaseDiagram.png)
 
 ### 3. Class Diagram
 * The class diagram represents classes like Currency Converter, Currency Rates, GUI and Error Handling elements, illustrating their relationships and interactions in facilitating user input, data retrieval, and conversion processes within the application.
-* [Class Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/class_diagram.jpg)
+* [Class Diagram](https://github.com/karanzaveri/Currency-Conversion/blob/main/UML%20Diagrams/ClassDiagram.png)
 
 # Requirements Engineering
 ### 1. Functional Requirements

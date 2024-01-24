@@ -81,6 +81,7 @@ Clean Code Development (CCD) focuses on writing code that is easy to read, under
 # Build Management
 
 Build management for the Currency Conversion project has been implemented using [Github Actions](https://github.com/karanzaveri/TestCC/actions)
+
 [![Python CI](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml/badge.svg)](https://github.com/karanzaveri/Currency-Conversion/actions/workflows/python-ci.yml)
 
 # Unit Tests

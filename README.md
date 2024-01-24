@@ -107,8 +107,7 @@ The unit tests has been done in 2 parts and is written using the unittest framew
 #### 3. Running Tests:
 * The [main](https://github.com/karanzaveri/Currency-Conversion/blob/main/test_main.py#L37) block ensures that if the script is run directly (not imported as a module), the 'unittest.main()' function is called, which discovers and runs the tests.
 
-![Result 1](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/unittest.png)
-![Result 2](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/unittestnongui.png)
+![Result](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/unittestresult.png)
 
 # IDE
 I have used Visual Studio Code IDE, mentioned below are my few favorite shortcuts:

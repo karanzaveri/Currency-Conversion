@@ -1,5 +1,5 @@
 import unittest
-from currency_coversion import RealTimeCurrencyConverter
+from currency_conversion import RealTimeCurrencyConverter
 
 class TestRealTimeCurrencyConverter(unittest.TestCase):
     def test_get_exchange_rates(self):

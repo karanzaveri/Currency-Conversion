@@ -42,7 +42,10 @@ To access the code: [Currency Conversion Code](https://github.com/karanzaveri/Cu
 * Quality Assurance
 
 ### [Trello](https://trello.com/invite/b/g0aGcUnD/ATTI873728185d133e582c79efe96ca36a855FA179CA/currency-conversion)
-- Tasklist [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/trello.png)
+* Tasklist [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/trello.png)
+
+### [JIRA](https://karanzaveri92.atlassian.net/jira/software/projects/CC/boards/1?atlOrigin=eyJpIjoiZGZkYzc3ZDhjOTY0NGE0Mzg4NjU0MTQyNTNkNThkMzQiLCJwIjoiaiJ9)
+* Kanban Board [Screenshot](https://github.com/karanzaveri/Currency-Conversion/blob/main/images/jira.png)
 
 # DDD
 Domain-Driven Design (DDD) is an approach to software development that centers around a deep understanding of the business domain. 

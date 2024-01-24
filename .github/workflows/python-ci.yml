@@ -18,6 +18,8 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Run tests
+      run: python -m unittest test_main
+
     - name: Run Maven
       run: mvn clean compile exec:exec
-      working-directory: Currency-Conversion

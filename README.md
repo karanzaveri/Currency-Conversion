@@ -132,7 +132,7 @@ The [get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob
 The [requests.get](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L18) function in 'get_exchange_rates' is a higher-order function, taking a URL as an argument and returning a function ('get') that performs an HTTP GET request.
 
 4. Functions as Parameters and Return Values:
-The 'convert' method takes parameters and returns a calculated value. Button widgets use functions like [perform_conversion](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L103) and [show_transaction_history](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L108) as parameters for the 'command' attribute.
+The 'convert' method takes parameters and returns a calculated value. Button widgets use functions like [perform_conversion](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L112) and [show_transaction_history](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L140) as parameters for the 'command' attribute.
 
 5. Closures / Anonymous Functions:
 While 'lambda' functions are not explicitly used, functions passed to the [command](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L103) attribute of buttons can be considered as anonymous functions.

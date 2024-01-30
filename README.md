@@ -123,19 +123,19 @@ I have used Visual Studio Code IDE, mentioned below are my few favorite shortcut
 In my Currency Conversion code, certain functional programming principles are applied. Here's how the code adheres to these principles:
 
 1. Final Data Structures:
-The 'data' attribute in [RealTimeCurrencyConverter](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L11) is initialized with the final result of the API call ('response.json()'), representing exchange rates. It remains unmodified afterward.
+The 'data' attribute in [RealTimeCurrencyConverter](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L11) is initialized with the final result of the API call ('response.json()'), representing exchange rates. It remains unmodified afterward.
 
 2. Side-Effect-Free Functions:
-The [get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L16) function has no side effects, performing an HTTP GET request and returning the JSON response without modifying external state. The [convert](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L25) method is also side-effect-free.
+The [get_exchange_rates](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L16) function has no side effects, performing an HTTP GET request and returning the JSON response without modifying external state. The [convert](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L25) method is also side-effect-free.
 
 3. Higher-Order Functions:
-The [requests.get](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L18) function in 'get_exchange_rates' is a higher-order function, taking a URL as an argument and returning a function ('get') that performs an HTTP GET request.
+The [requests.get](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L18) function in 'get_exchange_rates' is a higher-order function, taking a URL as an argument and returning a function ('get') that performs an HTTP GET request.
 
 4. Functions as Parameters and Return Values:
-The 'convert' method takes parameters and returns a calculated value. Button widgets use functions like [perform_conversion](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L103) and [show_transaction_history](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L108) as parameters for the 'command' attribute.
+The 'convert' method takes parameters and returns a calculated value. Button widgets use functions like [perform_conversion](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L103) and [show_transaction_history](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L108) as parameters for the 'command' attribute.
 
 5. Closures / Anonymous Functions:
-While 'lambda' functions are not explicitly used, functions passed to the [command](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_coversion.py#L103) attribute of buttons can be considered as anonymous functions.
+While 'lambda' functions are not explicitly used, functions passed to the [command](https://github.com/karanzaveri/Currency-Conversion/blob/main/currency_conversion.py#L103) attribute of buttons can be considered as anonymous functions.
 
 # Built Using
 ![python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
